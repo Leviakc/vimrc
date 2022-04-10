@@ -1,3 +1,4 @@
+set complete+=k~/.vim/emojis/keywords.txt
 set number
 set mouse=a
 set numberwidth=1
@@ -34,7 +35,7 @@ set cmdheight=2
 		  autocmd CmdlineEnter /,\? :set hlsearch
 		  autocmd CmdlineLeave /,\? :set nohlsearch
 		augroup END
-
+so ~/.vim/emojis/emoji.vim
 
 call plug#begin('~/.vim/plugged')
 
@@ -391,3 +392,4 @@ let g:UltiSnipsListSnippets="<c-l>"
 " vim-slime
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": get(split($TMUX, ","), 0), "target_pane": ":.2"}
+
